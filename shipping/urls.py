@@ -7,6 +7,7 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     # path('api/ingredients', views.IngredientsList.as_view()),
+    path('ingredients', views.ingredients, name='ingredients'),
     path('products', views.products, name='products'),
     path('productsoverview', views.productoverview, name='productsoverview'),
     path('badcombinations', views.badcombination, name='badcombinations')
